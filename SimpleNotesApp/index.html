@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Notes App</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #ffe0b2;">
+
+  <div style="background-color: #2196f3; color: white; padding: 10px; display: flex; justify-content: space-between;">
+    <h2 style="margin: 0;">Simple Notes</h2>
+    <input type="text" id="searchInput" placeholder="Search notes here..." 
+           style="padding: 6px; border-radius: 15px; border: none; outline: none; margin-top: 5px;">
+  </div>
+
+  <h3 style="text-align: center; margin-top: 20px;">Simple Notes App using JavaScript</h3>
+
+  <div style="width: 60%; margin: auto; background: white; padding: 20px; box-shadow: 0 0 5px #999;">
+    <textarea id="noteInput" placeholder="Write your note..." 
+              style="width: 100%; height: 80px; padding: 10px; font-size: 14px;"></textarea><br><br>
+    <button onclick="addNote()" id="addBtn" 
+            style="background-color: #2196f3; color: white; padding: 8px 12px; border: none; border-radius: 4px;">Add Note</button>
+    <button onclick="clearInput()" 
+            style="background-color: #ccc; padding: 8px 12px; border: none; border-radius: 4px; margin-left: 10px;">Cancel</button>
+  </div>
+
+  <h4 style="text-align: center; margin-top: 30px;">Notes List</h4>
+  <div id="notesList" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px;"></div>
+
+  <!-- Link to JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
